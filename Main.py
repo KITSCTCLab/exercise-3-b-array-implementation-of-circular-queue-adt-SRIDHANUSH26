@@ -10,7 +10,7 @@ class MyCircularQueue:
         # Write code here
          if self.is_full():
             return False
-        if self.front == -1:
+         if self.front == -1:
             self.front = 0
             self.rear = 0
         else:

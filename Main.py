@@ -13,7 +13,7 @@ class MyCircularQueue:
          if self.front == -1:
             self.front = 0
             self.rear = 0
-        else:
+         else:
             self.rear = (self.rear + 1) % self.size
         self.queue[self.rear] = value
         return True
@@ -38,7 +38,7 @@ class MyCircularQueue:
         # Write code here
          if not self.is_empty():
          return self.queue[self.rear]
-        return -1
+         return -1
 
     def is_empty(self):
         # Write code here

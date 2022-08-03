@@ -15,18 +15,18 @@ class MyCircularQueue:
             self.rear = 0
          else:
             self.rear = (self.rear + 1) % self.size
-        self.queue[self.rear] = value
+            self.queue[self.rear] = value
         return True
 
     def dequeue(self) -> bool:
         # Write code here
          if self.is_empty(): 
             return False
-        if self.front == self.rear:
+         if self.front == self.rear:
             self.front, self.rear = -1, -1
-        else:
+         else:
             self.front = (self.front + 1) % self.size
-        return True
+         return True
 
     def get_front(self) -> int:
         # Write code here
